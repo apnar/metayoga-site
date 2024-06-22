@@ -5,7 +5,9 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(38.40121, -75.57288);
+    var salLatlng = new google.maps.LatLng(38.40117819291426, -75.57305886011977);
+    var ocLatlng = new google.maps.LatLng(38.33552066998888, -75.10007584427875);
+    var willLatlng = new google.maps.LatLng(38.38967276842191, -75.35150611662726);
     // 39.399872
     // -8.224454
     
@@ -14,7 +16,7 @@ function init() {
         zoom: 11,
 
         // The latitude and longitude to center the map (always required)
-        center: myLatlng,
+        center: willLatlng,
 
         // How you would like to style the map. 
         scrollwheel: false,
@@ -45,7 +47,13 @@ function init() {
 
 
     var marker = new google.maps.Marker({
-       position: myLatlng,
+       position: salLatlng,
+       map: map,
+       icon: 'images/meta_yoga_loc.png'
+    });
+
+   var ocmarker = new google.maps.Marker({
+       position: ocLatlng,
        map: map,
        icon: 'images/meta_yoga_loc.png'
     });

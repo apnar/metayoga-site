@@ -5,74 +5,68 @@
 
 
     <url>
-        <loc>https://metayogasalisbury.com/</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/index.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/index.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/story.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/story.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/teachers.html</loc>
-        <lastmod>2023-05-18T14:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://metayogasalisbury.com/classes.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/classes.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/schedule.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/schedule.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/rates.html</loc>
-        <lastmod>2023-05-18T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/rates.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/faq.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/faq.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/reviews.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/reviews.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/contact.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/contact.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/dana.html</loc>
-        <lastmod>2021-11-23T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/dana.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
-        <loc>https://metayogasalisbury.com/travis.html</loc>
-        <lastmod>2023-01-08T14:00:00+00:00</lastmod>
+        <loc>https://metayoga.com/travis.html</loc>
+        <lastmod>2024-06-22T14:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.70</priority>
     </url>
