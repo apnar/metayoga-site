@@ -1,5 +1,4 @@
 url: "https://metayoga.com"
 plugins:
   - jekyll-last-modified-at
-  - jekyll-sitemap
   - jekyll-seo-tag
