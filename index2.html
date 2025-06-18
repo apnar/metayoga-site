@@ -60,7 +60,7 @@ sitemap:
                 </a>
             </div>
         {% assign my_counter = my_counter | plus: 1 %}
-        {% if my_counter | modulo:4 == 0 %}
+        {% if my_counter | modulo: 4 == 0 %}
             </div>
             <div class="row">
         {% endif %}
