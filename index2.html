@@ -59,14 +59,13 @@ sitemap:
                     </div>
                 </a>
             </div>
-        {% endif %}
+    {% endif %}
 
-        {% increment my_counter %}
-        {% if my_counter == 4 %}
+    {% increment my_counter %}
+    {% if my_counter == 4 %}
             </div>
             <div class="row">
-            {% assign my_counter = 0 %}
-        {% endif %}
+        {% assign my_counter = 0 %}
     {% endif %}
 {% endfor %}
             </div>
