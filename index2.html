@@ -48,10 +48,9 @@ sitemap:
                 </div>
             </div>
             <div class="row">
-
-{% assign my_counter = 0 %}
-{% for image in site.static_files %}
-    {% if image.path contains '/gallery/' %}
+{%- assign my_counter = 0 -%}
+{%- for image in site.static_files -%}
+    {%- if image.path contains '/gallery/' -%}
             <div class="col-md-3 ftco-animate">
                 <a href="{{ site.baseurl }}{{ image.path }}" class="gallery image-popup img d-flex align-items-center" style="background-image: url('{{ site.baseurl }}{{ image.path | replace: '/gallery/', '/gallery-thumbs/' | replace: '.jpg', 't.jpg' }}');">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
@@ -59,14 +58,14 @@ sitemap:
                     </div>
                 </a>
             </div>
-        {% assign my_counter = my_counter | plus: 1 %}
-        {% assign row_check = my_counter | modulo: 4 %}
-        {% if row_check == 0 %}
+        {%- assign my_counter = my_counter | plus: 1 -%}
+        {%- assign row_check = my_counter | modulo: 4 -%}
+        {%- if row_check == 0 -%}
             </div>
             <div class="row">
-        {% endif %}
-    {% endif %}
-{% endfor %}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
             </div>
         </div>
     </section>
