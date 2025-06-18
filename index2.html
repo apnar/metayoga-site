@@ -1,0 +1,74 @@
+---
+layout: default
+title: Hot Yoga & Warm Yoga
+canonical_url: 'https://metayoga.com/'
+sitemap:
+  priority: 1
+---
+
+{% include schema.html %}
+
+    <section class="hero-wrap js-fullheight" style="background-image: url('images/dana_trav_looking.jpg');">
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight justify-content-start" style="position: relative; top: 80px;">
+                <div class="col-md-2 ftco-animate">
+                    <h1 class="typewrite mb-3" data-period="90000" data-type='[ "Welcome home"]' style="font: 400 5vw 'Homemade Apple', Helvetica, sans-serif;">
+                        <span class="wrap"></span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section d-md-flex bg-light">
+        <div class="container ftco-animate">
+            <p class="ftco-animate">
+                <h3 class="subheading">Met·a</h3>
+                <h4>/ˈmedə/</h4>
+                Meta, short for metamorphosis; to transform; a change of the form or nature of a person into a completely different one.
+            </p><BR />
+            <p class="ftco-animate">
+                A term, especially in art, used to characterize something that is characteristically self-referential; just like in yoga, the journey of the self, through the self, to the self.
+            </p><BR />
+            <p class="ftco-animate">
+                About the thing itself; seeing the thing from a higher perspective instead of from within the thing; being self-aware; being the seer not the seen.
+            </p><BR />
+            <p class="ftco-animate">
+                Transform your life with yoga practice, start your journey here!
+            </p><BR />
+        </div>
+    </section>
+
+    <section class="ftco-gallery ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h3 class="subheading">Gallery</h3>
+                    <h2 class="mb-1">View our Gallery</h2>
+                </div>
+            </div>
+            <div class="row">
+
+
+{% for image in site.static_files %}
+    {% if image.path contains 'gallery' %}
+            <div class="col-md-3 ftco-animate">
+                <a href="{{ site.baseurl }}{{ image.path }}" class="gallery image-popup img d-flex align-items-center" style="background-image: url('{{ site.baseurl }}{{ image.path | replace: 'gallery', 'gallery-thumbs' | replace: 't.jpg', '.jpg' }}');">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <span class="icon-instagram"></span>
+                    </div>
+                </a>
+            </div>
+        {% endif %}
+
+        {% increment my_counter %}
+        {% if my_counter == 4 %}
+            </div>
+            <div class="row">
+            {% assign my_counter = 0 %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+            </div>
+        </div>
+    </section>
