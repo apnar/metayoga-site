@@ -49,18 +49,17 @@ sitemap:
             </div>
             <div class="row">
 
-
+{% assign my_counter = 0 %}
 {% for image in site.static_files %}
     {% if image.path contains '/gallery/' %}
             <div class="col-md-3 ftco-animate">
-                <a href="{{ site.baseurl }}{{ image.path }}" class="gallery image-popup img d-flex align-items-center" style="background-image: url('{{ site.baseurl }}{{ image.path | replace: 'gallery', 'gallery-thumbs' | replace: 't.jpg', '.jpg' }}');">
+                <a href="{{ site.baseurl }}{{ image.path }}" class="gallery image-popup img d-flex align-items-center" style="background-image: url('{{ site.baseurl }}{{ image.path | replace: '/gallery/', '/gallery-thumbs/' | replace: 't.jpg', '.jpg' }}');">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <span class="icon-instagram"></span>
                     </div>
                 </a>
             </div>
-
-        {% increment my_counter %}
+        {% assign my_counter = my_counter | plus: 1 %}
         {% if my_counter == 4 %}
             </div>
             <div class="row">
