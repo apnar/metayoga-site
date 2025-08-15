@@ -46,11 +46,11 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
 
-    var marker = new google.maps.Marker({
-       position: salLatlng,
-       map: map,
-       icon: 'images/meta_yoga_loc.png'
-    });
+//    var marker = new google.maps.Marker({
+//       position: salLatlng,
+//       map: map,
+//       icon: 'images/meta_yoga_loc.png'
+//    });
 
    var ocmarker = new google.maps.Marker({
        position: ocLatlng,
