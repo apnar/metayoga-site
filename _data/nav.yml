@@ -1,0 +1,24 @@
+- title: Home
+  url: /
+  match: /index.html
+- title: Story
+  url: story
+  match: /story.html
+- title: Classes
+  url: classes
+  match: /classes.html
+- title: Events & Trainings
+  url: events
+  match: /events.html
+- title: Schedule
+  url: schedule
+  match: /schedule.html
+- title: Rates
+  url: rates
+  match: /rates.html
+- title: FAQ
+  url: faq
+  match: /faq.html
+- title: Contact
+  url: contact
+  match: /contact.html

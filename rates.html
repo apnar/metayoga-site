@@ -1,179 +1,21 @@
 ---
 layout: default
 title: Rates
+description: Class packs, memberships, and student/teacher/military discounts at Meta Yoga.
 canonical_url: 'https://metayoga.com/rates'
 ---
     <section class="ftco-section bg-light">
         <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h3 class="subheading">Rates</h3>
-                    <h2 class="mb-1">Studio Rates</h2>
-                </div>
-            </div>
-            <h3 class="subheading">By the Class (good for one year from the date of purchase):</h3>
+            {% include page-heading.html kicker="Rates" title="Studio Rates" col=7 %}
+
+            {% for group in site.data.rates %}
+            <h3 class="subheading">{{ group.heading }}</h3>
             <div class="row">
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Single Class Drop In</h2>
-                            <span class="price"><sup>$</sup> <span class="number">27</span></span>
-                            <span class="excerpt d-block">For 1 Class</span>
-
-                            <h3 class="heading-2 my-4">Super simple for a single class</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100002"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Five Class Pack</h2>
-                            <span class="price"><sup>$</sup> <span class="number">100</span></span>
-                            <span class="excerpt d-block">For 5 Classes</span>
-
-                            <h3 class="heading-2 my-4">Great starter pack for 5 classes</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100004"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Ten Class Pack</h2>
-                            <span class="price"><sup>$</sup> <span class="number">180</span></span>
-                            <span class="excerpt d-block">For 10 Classes</span>
-
-                            <h3 class="heading-2 my-4">10 classes of awesome yoga</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100005"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Twenty Class Pack</h2>
-                            <span class="price"><sup>$</sup> <span class="number">320</span></span>
-                            <span class="excerpt d-block">For 20 Classes</span>
-
-                            <h3 class="heading-2 my-4">Best value for class pass!</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100006"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <BR /><BR />
-            <h3 class="subheading"> Memberships:</h3>
-            <div class="row">
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">New Student Introductory Two Weeks</h2>
-                            <span class="price"><sup>$</sup> <span class="number">65</span></span>
-                            <span class="excerpt d-block">This is for students who reside in the area and are new to the studio to check us out with unlimited yoga for two weeks.</span>
-
-                            <h3 class="heading-2 my-4">Incredible savings for new students!</h3>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-4">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">One Week Traveler's Pass</h2>
-                            <span class="price"><sup>$</sup> <span class="number">65</span></span>
-                            <span class="excerpt d-block">This is for traveling students looking for a great deal for one consecutive week of unlimited classes.</span>
-
-                            <h3 class="heading-2 my-4">Perfect for folks traveling into town.</h3>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-4">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">One Month Membership</h2>
-                            <span class="price"><sup>$</sup> <span class="number">99</span></span>
-                            <span class="excerpt d-block">Unlimited classes for 1 consecutive month</span>
-
-                            <h3 class="heading-2 my-4">Why only get a week when you can get a full month!</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100007"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Monthly auto renew membership</h2>
-                            <span class="price"><sup>$</sup> <span class="number">90/m</span></span>
-                            <span class="excerpt d-block">Reoccurring Monthly Unlimited classes for $90 (3 month minimum commitment contract)</span>
-
-                            <h3 class="heading-2 my-4">Save on our one month membership by committing to three months.</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-contract-text-link  btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="contract-link" data-inner-html="Buy Now" data-contract-id="100"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Annual Membership</h2>
-                            <span class="price"><sup>$</sup> <span class="number">980</span></span>
-                            <span class="excerpt d-block">Unlimited classes for 1 consecutive year when paid in full.</span>
-
-                            <h3 class="heading-2 my-4">Best value by far!</h3>
-
-                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="100010"></healcode-widget>
-                        </div>
-                    </div>
-                </div>
+                {% for item in group.items %}
+                {% include rate-card.html item=item %}
+                {% endfor %}
             </div>
             <BR /><BR />
-            <h3 class="subheading">Student, Teacher, and Military Discount Plans:</h3>
-            <div class="row">
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Discount Drop In</h2>
-                            <span class="price"><sup>$</sup> <span class="number">22</span></span>
-                            <span class="excerpt d-block">Single Class for Student/Teacher/Military</span>
-
-                            <h3 class="heading-2 my-4">Great discount for those eligible!</h3>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-4">In Studio Only</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <h2 class="heading">Discount Monthly Membership</h2>
-                            <span class="price"><sup>$</sup> <span class="number">90/m</span></span>
-                            <span class="excerpt d-block">Unlimited classes for 1 consecutive month</span>
-
-                            <h3 class="heading-2 my-4">Only available for Student/Teacher/Military</h3>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-4">In Studio Only</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            {% endfor %}
         </div>
     </section>

@@ -1,0 +1,81 @@
+- heading: "By the Class (good for one year from the date of purchase):"
+  items:
+    - title: Single Class Drop In
+      price: "27"
+      excerpt: For 1 Class
+      tagline: Super simple for a single class
+      cta:
+        type: healcode_pricing
+        service_id: "100002"
+    - title: Five Class Pack
+      price: "100"
+      excerpt: For 5 Classes
+      tagline: Great starter pack for 5 classes
+      cta:
+        type: healcode_pricing
+        service_id: "100004"
+    - title: Ten Class Pack
+      price: "180"
+      excerpt: For 10 Classes
+      tagline: 10 classes of awesome yoga
+      cta:
+        type: healcode_pricing
+        service_id: "100005"
+    - title: Twenty Class Pack
+      price: "320"
+      excerpt: For 20 Classes
+      tagline: Best value for class pass!
+      cta:
+        type: healcode_pricing
+        service_id: "100006"
+
+- heading: "Memberships:"
+  items:
+    - title: New Student Introductory Two Weeks
+      price: "65"
+      excerpt: This is for students who reside in the area and are new to the studio to check us out with unlimited yoga for two weeks.
+      tagline: Incredible savings for new students!
+      cta:
+        type: studio_only
+    - title: One Week Traveler's Pass
+      price: "65"
+      excerpt: This is for traveling students looking for a great deal for one consecutive week of unlimited classes.
+      tagline: Perfect for folks traveling into town.
+      cta:
+        type: studio_only
+    - title: One Month Membership
+      price: "99"
+      excerpt: Unlimited classes for 1 consecutive month
+      tagline: Why only get a week when you can get a full month!
+      cta:
+        type: healcode_pricing
+        service_id: "100007"
+    - title: Monthly auto renew membership
+      price: "90/m"
+      excerpt: Reoccurring Monthly Unlimited classes for $90 (3 month minimum commitment contract)
+      tagline: Save on our one month membership by committing to three months.
+      cta:
+        type: healcode_contract
+        contract_id: "100"
+    - title: Annual Membership
+      price: "980"
+      excerpt: Unlimited classes for 1 consecutive year when paid in full.
+      tagline: Best value by far!
+      cta:
+        type: healcode_pricing
+        service_id: "100010"
+
+- heading: "Student, Teacher, and Military Discount Plans:"
+  items:
+    - title: Discount Drop In
+      price: "22"
+      excerpt: Single Class for Student/Teacher/Military
+      tagline: Great discount for those eligible!
+      cta:
+        type: studio_only
+    - title: Discount Monthly Membership
+      price: "90/m"
+      excerpt: Unlimited classes for 1 consecutive month
+      tagline: Only available for Student/Teacher/Military
+      cta:
+        type: studio_only

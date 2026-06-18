@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Teachers - Dana
+description: Meet Dana Fields — 500 RYT yoga teacher and co-founder of Meta Yoga.
 canonical_url: 'https://metayoga.com/dana'
 ---
     <section class="ftco-section">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="ftco-animate">
-                    <img src="images/dana.jpg" alt="" class="img-fluid">
+                    <img src="images/dana.jpg" alt="Portrait of Dana Fields" class="img-fluid" loading="lazy">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -40,44 +41,5 @@ canonical_url: 'https://metayoga.com/dana'
     </section>
 
 
-    <section class="ftco-gallery ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h3 class="subheading">Gallery</h3>
-                    <h2 class="mb-1">See the latest photos of Dana</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/dana-1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/dana-1.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/dana-2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/dana-2.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/dana-3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/dana-3.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/dana-4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/dana-4.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% include gallery-grid.html title="See the latest photos of Dana" images=site.data.galleries.dana %}
 

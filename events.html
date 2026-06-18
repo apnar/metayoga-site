@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Events
+description: Upcoming workshops, retreats, and teacher trainings at Meta Yoga.
 canonical_url: 'https://metayoga.com/events'
 sitemap:
   changefreq: 'daily'
@@ -8,58 +9,12 @@ sitemap:
 
     <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-12 heading-section ftco-animate text-center">
-                    <h3 class="subheading">Enrollments</h3>
-                    <h2 class="mb-1">Events & Trainings</h2>
-                </div>
-            </div>
+            {% include page-heading.html kicker="Enrollments" title="Events & Trainings" %}
             <div class="row no-gutters">
                 <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="e578113213a" data-widget-version="0"></healcode-widget>
             </div>
         </div>
     </section>
 
-
-
-    <section class="ftco-gallery ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h3 class="subheading">Gallery</h3>
-                    <h2 class="mb-1">See the latest photos</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/gallery-01.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-01.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/gallery-02.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-02.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/gallery-03.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-03.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ftco-animate">
-                    <a href="images/gallery-04.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-04.jpg);">
-                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                            <span class="icon-instagram"></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% include gallery-grid.html title="See the latest photos" images=site.data.galleries.studio %}
 

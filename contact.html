@@ -1,18 +1,13 @@
 ---
 layout: default
 title: Contact
+description: Visit Meta Yoga in Ocean City, MD or send us a message — we'd love to hear from you.
 canonical_url: 'https://metayoga.com/contact'
 ---
 
-{% include schema.html %}
-
     <section class="ftco-section contact-section">
 
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-12 heading-section text-center ftco-animate">
-                <h3 class="subheading">Contact</h3>
-            </div>
-        </div>
+        {% include page-heading.html kicker="Contact" %}
         <div class="container">
             <div class="row block-9">
                 <div class="col-md-4 contact-info ftco-animate bg-light p-4">
@@ -43,20 +38,24 @@ canonical_url: 'https://metayoga.com/contact'
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Your Name">
+                                    <label for="contact-name" class="sr-only">Your Name</label>
+                                    <input id="contact-name" name="name" type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input name="email" type="text" class="form-control" placeholder="Your Email">
+                                    <label for="contact-email" class="sr-only">Your Email</label>
+                                    <input id="contact-email" name="email" type="email" class="form-control" placeholder="Your Email" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input name="subject" type="text" class="form-control" placeholder="Subject">
+                            <label for="contact-subject" class="sr-only">Subject</label>
+                            <input id="contact-subject" name="subject" type="text" class="form-control" placeholder="Subject">
                         </div>
                         <div class="form-group">
-                            <textarea name="text" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <label for="contact-message" class="sr-only">Message</label>
+                            <textarea id="contact-message" name="text" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">

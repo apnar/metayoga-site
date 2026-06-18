@@ -1,0 +1,22 @@
+                <div class="col-md-4 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <h2 class="heading">{{ include.item.title }}</h2>
+                            <span class="price"><sup>$</sup> <span class="number">{{ include.item.price }}</span></span>
+                            <span class="excerpt d-block">{{ include.item.excerpt }}</span>
+
+                            <h3 class="heading-2 my-4">{{ include.item.tagline }}</h3>
+
+                            {% case include.item.cta.type %}
+                            {% when "healcode_pricing" %}
+                            <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="{{ include.item.cta.service_id }}"></healcode-widget>
+                            {% when "healcode_contract" %}
+                            <healcode-widget data-version="0.2" data-link-class="healcode-contract-text-link  btn btn-primary d-block px-2 py-4" data-site-id="83432" data-mb-site-id="992785" data-type="contract-link" data-inner-html="Buy Now" data-contract-id="{{ include.item.cta.contract_id }}"></healcode-widget>
+                            {% when "studio_only" %}
+                            <a href="#" class="btn btn-primary d-block px-2 py-4">In Studio Only</a>
+                            {% else %}
+                            <a href="#" class="btn btn-primary d-block px-2 py-4">Buy Now</a>
+                            {% endcase %}
+                        </div>
+                    </div>
+                </div>

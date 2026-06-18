@@ -4,7 +4,7 @@
             <div class="row mb-5">
                 <div class="col-md-2 mb-5 mb-md-5 ftco-animate">
                     <div class="ftco-footer-widget mb-4">
-                        <img style='height: 160; width: 131' src="images/meta_yoga_logo_foot.png" />
+                        <img style="height: 160px; width: 131px;" src="images/meta_yoga_logo_foot.png" alt="Meta Yoga" loading="lazy" />
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-md-5 ftco-animate">
@@ -42,14 +42,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
+{% if page.url == "/rates.html" %}
+    <script src="js/jquery.animateNumber.min.js"></script>
+{% endif %}
 {% if page.url == "/contact.html" %}
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2Qtr6omTjci3TJMfLc0vXexmyOadN8zc"></script>
     <script src="js/google-map.js"></script>
