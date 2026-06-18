@@ -1,4 +1,12 @@
 url: "https://metayoga.com"
+logo: /images/meta_yoga_logo_large.jpg
+include:
+  - _headers
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/meta_yoga_logo_large.jpg
 plugins:
   - jekyll-last-modified-at
   - jekyll-seo-tag

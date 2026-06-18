@@ -2,7 +2,7 @@
 
 Source for **[metayoga.com](https://metayoga.com)** — the website for Meta Yoga, a Hot and Warm Yoga studio in Ocean City, Maryland.
 
-Static [Jekyll](https://jekyllrb.com/) site, deployed via GitHub Pages.
+Static [Jekyll](https://jekyllrb.com/) site, deployed via Cloudflare Pages.
 
 ## Local development
 
@@ -49,6 +49,8 @@ bundle exec jekyll build
 ├── gallery-thumbs/     # Matching thumbnails for the home-page gallery
 ├── fonts/              # Icon-font assets (icomoon, ionicons, open-iconic)
 ├── sitemap.xml         # Hand-rolled sitemap (auto-includes every page)
+├── 404.html            # Not-found page (served by Cloudflare Pages)
+├── _headers            # Cloudflare Pages security headers
 └── robots.txt
 ```
 
@@ -88,7 +90,9 @@ Most updates are content tweaks, not code:
 
 ## Deployment
 
-The `main` branch is published by GitHub Pages.
+The `main` branch is published by Cloudflare Pages. Security response headers are set in
+`_headers` (force-included into the build via `include: ["_headers"]` in `_config.yml`), and
+`404.html` is served automatically for unmatched routes.
 
 ## License
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Static Jekyll site for Meta Yoga (metayoga.com) — a hot/warm yoga studio in Ocean City, MD. Deployed via GitHub Pages from `main` (the `url` in `_config.yml` is the production domain).
+Static Jekyll site for Meta Yoga (metayoga.com) — a hot/warm yoga studio in Ocean City, MD. Deployed via Cloudflare Pages from `main` (the `url` in `_config.yml` is the production domain).
 
 ## Commands
 
@@ -41,6 +41,8 @@ No tests, no linter, no JS/CSS build step. `css/style.css` is the theme bundle (
   - `jekyll-seo-tag` — consumes `title` / `description` / `canonical_url` front matter
   - `jekyll-last-modified-at`
 - `sitemap.xml` is a hand-rolled template that auto-iterates `site.pages` — **you don't need to edit it when adding a page**.
+- `404.html` (`permalink: /404.html`) is served automatically by Cloudflare Pages for unmatched routes.
+- `_headers` sets site-wide security response headers (Cloudflare Pages convention). Because it starts with `_`, it is force-included via `include: ["_headers"]` in `_config.yml` so it lands in `_site/`.
 
 ## Data files (`_data/`)
 
@@ -58,6 +60,7 @@ Most "content" lives here, not in HTML. Edit the data file, not the markup.
   - Google Maps API + `js/google-map.js` — only on `/contact.html`.
 - The Healcode CDN script must stay global (the nav login widget uses it on every page).
 - Plugin scripts that aren't loaded should not be referenced by `js/main.js` — when removing a vendor lib, also strip its init call there.
+- The front-end bundle is jQuery + Bootstrap 4 plus Magnific Popup (galleries), Waypoints (scroll-triggered `ftco-animate` reveals + the rates counter), easing, and animateNumber. Owl Carousel, AOS, and Scrollax were removed as unused — don't reintroduce them.
 
 ## Home-page gallery
 
