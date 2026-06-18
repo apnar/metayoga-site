@@ -18,7 +18,7 @@ No tests, no linter, no JS/CSS build step. `css/style.css` is the theme bundle (
 
 ## Architecture
 
-- One top-level `*.html` per page (index, story, classes, events, schedule, rates, faq, contact, dana, travis, infrared). Each has front matter:
+- One top-level `*.html` per page (index, story, classes, events, schedule, rates, faq, contact, dana, travis). Each has front matter:
   ```yaml
   ---
   layout: default
