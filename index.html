@@ -46,25 +46,16 @@ sitemap:
                     <h2 class="mb-1">View our Gallery</h2>
                 </div>
             </div>
-            <div class="row">
-{%- assign my_counter = 0 -%}
-{% assign n = site.static_files | size %}
-{% assign myfiles = site.static_files | sample: n %}
-{%- for image in myfiles -%}
+            <div class="row" id="home-gallery">
+{%- for image in site.static_files -%}
     {%- if image.path contains '/gallery/' -%}
-            <div class="col-md-3 ftco-animate">
-                <a href="{{ site.baseurl }}{{ image.path }}" class="gallery image-popup img d-flex align-items-center" style="background-image: url('{{ site.baseurl }}{{ image.path | replace: '/gallery/', '/gallery-thumbs/' | replace: '.jpg', 't.jpg' }}');">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-        {%- assign my_counter = my_counter | plus: 1 -%}
-        {%- assign row_check = my_counter | modulo: 4 -%}
-        {% if row_check == 0 %}
-            </div>
-            <div class="row">
-        {% endif %}
+                <div class="col-md-3 ftco-animate">
+                    <a href="{{ site.baseurl }}{{ image.path }}" class="gallery image-popup img d-flex align-items-center" style="background-image: url('{{ site.baseurl }}{{ image.path | replace: '/gallery/', '/gallery-thumbs/' | replace: '.jpg', 't.jpg' }}');" aria-label="Open gallery image">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram" aria-hidden="true"></span>
+                        </div>
+                    </a>
+                </div>
     {%- endif -%}
 {%- endfor -%}
             </div>
